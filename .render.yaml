@@ -1,0 +1,5 @@
+services:
+  - type: cron
+    name: daily-word-sender
+    schedule: "30 22 * * *"  # 한국 시간 오전 7시 30분에 맞추려면 (UTC 기준 22시 30분)
+    command: python main.py
